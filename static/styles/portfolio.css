@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* Grid */
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+/* Site-wide */
+body {
+	color: #333;
+  font-family: 'Lato', sans-serif;
+}
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+.underline {
+	text-decoration: underline;
+}
+
+/* Header */
+header {
+  padding: 40px 10px;
+	padding-bottom: 20px;
+  text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+header h1 {
+	font-size: 45px;
+	font-weight: 700;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+header h2 {
+  font-size: 14px;
+  line-height: 30px;
+}
+header ul {
+	font-size: 14px;
+}
+header ul li {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px;
+}
+header ul li a {
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+	header ul li {
+		display: block;
+	}
+}
+
+@media (max-width: 360px) {
+	header h1 {
+		font-size: 30px;
+	}
+	header ul {
+		font-size: 14px;
+	}
+	header ul li {
+		display: block;
+	}
+}
+
+/* Section */
+section {
+	padding: 20px 10px;
+}
+section .info {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 10px;
+	padding-bottom: 50px;
+	font-size: 16px;
+	line-height: 1.7em;
+	text-align: justify;
+}
+section h2 {
+	padding: 10px;
+	padding-bottom: 30px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.info-box {
+	cursor: pointer;
+	color: #333;
+	padding: 25px;
+	box-sizing: border-box;
+	-webkit-trainsition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}
+.info-box:hover {
+	opacity: 0.5
+}
+.info-box h3 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 16px;
+	padding-bottom: 10px;
+	line-height: 1.25em;
+}
+.info-box p {
+	text-align: center;
+	color: #555;
+	font-size: 14px;
+	line-height: 1.45em;
+	padding: 10px;
+}
+
+.info-resume-container {
+	padding: 10px;
+}
+.info-resume {
+	max-width: 720px;
+	margin: 0 auto;
+}
+.info-resume .work-info h3 {
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.info-resume .work-info h3 span {
+	font-weight: 400;
+}
+.info-resume .date-location p {
+	font-style: italic;
+	text-align: right;
+}
+.info-resume .work-description p {
+	font-size: 16px;
+	line-height: 1.5em;
+	text-align: justify;
+}
+.info-resume .work-description ul {
+	list-style: circle;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.info-resume .work-description ul li {
+	line-height: 1.3em;
+	padding-top: 5px;
+}
+.info-resume .work-info h3, .info-resume .date-location p {
+	padding-bottom: 5px;
+	line-height: 1.2em;
+}
+@media (max-width: 720px) {
+	.info-resume .work-info h3, .info-resume .date-location p {
+		text-align: center;
+	}
+}
